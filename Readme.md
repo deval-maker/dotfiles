@@ -22,3 +22,6 @@ Design points:
 ## TODO:
 - Add conda env for tmuxp and libtmux
 - https://github.com/tmux-plugins/tmux-logging log for all the panes default. 
+
+
+https://hooks.slack.com/services/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

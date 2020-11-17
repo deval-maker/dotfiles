@@ -28,4 +28,4 @@ conda activate devals
 conda install pip 
 pip install libtmux
 pip install tmuxp
-pip install slackclient
+# pip install slackclient

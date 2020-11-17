@@ -1,6 +1,7 @@
 alias dotfiles="code ~/dotfiles"
 alias untar='tar -zxvf '
 
+alias df='df -h'
 ## get rid of command not found ##
 alias cd..='cd ..'
  
