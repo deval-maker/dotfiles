@@ -37,12 +37,12 @@ alias bashrc="code ~/.bashrc"
 alias p='ping -c 5 8.8.8.8'
 
 # if user is not root, pass all commands via sudo #
-if [ $UID -ne 0 ]; then
-    alias reboot='sudo reboot'
-    # update on one command
-    alias update='sudo apt-get update && sudo apt-get upgrade'
-    alias apt-get='sudo apt-get'
-fi
+#if [ $UID -ne 0 ]; then
+alias reboot='sudo reboot'
+# update on one command
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias apt-get='sudo apt-get'
+#fi
 
 alias wget='wget -c '
 

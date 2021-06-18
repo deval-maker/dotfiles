@@ -12,6 +12,9 @@ fi
 # Aliases
 ln -snf "$(pwd)/bash_aliases" ~/.bash_aliases
 
+# Fish
+# ln -snf "$(pwd)/config.fish" ~/.config/fish/
+
 # Bash functions
 ln -snf "$(pwd)/bash_functions" ~/.bash_functions
 
