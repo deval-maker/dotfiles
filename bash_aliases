@@ -1,4 +1,7 @@
+alias sshconfig="code ~/.ssh/config"
+alias bashrc="code ~/.bashrc"
 alias dotfiles="code ~/dotfiles"
+
 alias untar='tar -zxvf '
 
 alias df='df -h'
@@ -30,9 +33,6 @@ alias mkdir='mkdir -pv'
 
 # GREP Motifications
 alias grep='grep --color=auto'
-
-alias sshconfig="code ~/.ssh/config"
-alias bashrc="code ~/.bashrc"
 
 alias p='ping -c 5 8.8.8.8'
 

@@ -17,11 +17,8 @@ Design points:
 - Add commands like pane.activate_conda("pose")
 - Funtions for messaging. i.e. Slack  
 - Run configs: Setup, Clean, run-1, run-2, test (like make)
-- Poe handler.
 
 ## TODO:
 - Add conda env for tmuxp and libtmux
 - https://github.com/tmux-plugins/tmux-logging log for all the panes default. 
 
-
-https://hooks.slack.com/services/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

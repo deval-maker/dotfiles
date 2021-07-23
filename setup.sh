@@ -26,9 +26,3 @@ ln -snf "$(pwd)/tmux.conf" ~/.tmux.conf
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-conda 
-conda activate devals
-conda install pip 
-pip install libtmux
-pip install tmuxp
-# pip install slackclient

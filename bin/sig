@@ -1,3 +1,0 @@
-#!/bin/bash 
-echo "Sending message... '$1'"
-signal-cli -u +14126261266 send -m $1 +14126261266
