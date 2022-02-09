@@ -47,3 +47,5 @@ alias apt-get='sudo apt-get'
 alias wget='wget -c '
 
 alias myip="curl http://ipecho.net/plain; echo"
+
+alias b="batcat"

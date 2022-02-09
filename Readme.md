@@ -7,7 +7,6 @@ Install conda before setup
 Open tmux and press \<prefix> + I to install all the plugins. 
 
 ## Ref:
-- https://github.com/gpakosz/.tmux
 - https://github.com/tmux-plugins/tpm
 
 
@@ -21,4 +20,7 @@ Design points:
 ## TODO:
 - Add conda env for tmuxp and libtmux
 - https://github.com/tmux-plugins/tmux-logging log for all the panes default. 
+
+https://earthly.dev/blog/command-line-tools/
+https://switowski.com/blog/favorite-cli-tools#z
 
