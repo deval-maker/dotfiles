@@ -50,3 +50,11 @@ alias wget='wget -c '
 alias myip="curl http://ipecho.net/plain; echo"
 
 alias b="batcat"
+
+alias chx='chmod +x'
+alias ddu='du -sh * | sort -hr | head -20'
+
+# Git 
+alias ga='git add'
+alias gcm='git commit -m'
+alias gch='git checkout'
