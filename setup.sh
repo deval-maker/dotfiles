@@ -1,22 +1,13 @@
 # Bashrc
 ln -snf "$(pwd)/bashrc++" ~/.bashrc++
 
-if [ -z ${BASHRCPP+x} ]; then 
-    echo "Setting up Bashrc++";
-    echo "export BASHRCPP='++'" >> ~/.bashrc;
-    echo "source ~/.bashrc++" >> ~/.bashrc;
-else 
-    echo "Bashrc++ is already setup."; 
-fi
+echo "Setting up Bashrc";
 
-# Aliases
-ln -snf "$(pwd)/bash_aliases" ~/.bash_aliases
+echo "source ~/dotfiles/bash_functions" >> ~/.bashrc;
+echo "source ~/dotfiles/bash_aliases" >> ~/.bashrc;
 
 # Fish
-# ln -snf "$(pwd)/config.fish" ~/.config/fish/
-
-# Bash functions
-ln -snf "$(pwd)/bash_functions" ~/.bash_functions
+ln -snf "$(pwd)/config.fish" ~/.config/fish/
 
 # Tmux
 sudo apt-get install tmux

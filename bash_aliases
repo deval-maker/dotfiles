@@ -3,6 +3,7 @@ alias bashrc="code ~/.bashrc"
 alias dotfiles="code ~/dotfiles"
 
 alias untar='tar -zxvf '
+alias gti='git'
 
 alias df='df -h'
 ## get rid of command not found ##
