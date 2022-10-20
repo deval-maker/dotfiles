@@ -17,12 +17,15 @@ alias .4='cd ../../../../'
 
 ## Colorize the ls output ##
 alias ls='ls --color=auto'
+alias l='ls --color=auto'
+alias sl='ls --color=auto'
  
 ## Use a long listing format ##
 alias ll='ls -la'
  
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
+
 
 # Make some of the file manipulation programs verbose
 alias mv="mv -v"
@@ -54,7 +57,15 @@ alias b="batcat"
 alias chx='chmod +x'
 alias ddu='du -sh * | sort -hr | head -20'
 
+alias r='reset'
+
 # Git 
+alias gs='git status'
 alias ga='git add'
+alias gb='git branch'
 alias gcm='git commit -m'
 alias gch='git checkout'
+
+alias qpull='qoowa-robot-pull-image ros farm runtime builder'
+alias qbuild='qoowa-robot-build all'
+alias qclean='qoowa-robot-build clean'
