@@ -1,5 +1,9 @@
 ### Personal Dotfile and config manager.
 
+Awsm Fish: https://github.com/jorgebucaran/awsm.fish
+Fisher: https://github.com/jorgebucaran/fisher
+GitNow, Z, Done
+
 Install conda before setup
 
 `. setup.sh && . ~/.bashrc`
