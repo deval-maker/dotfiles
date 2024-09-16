@@ -1,6 +1,6 @@
-alias sshconfig="code ~/.ssh/config"
-alias bashrc="code ~/.bashrc"
-alias dotfiles="code ~/dotfiles"
+alias sshconfig="cursor ~/.ssh/config"
+alias bashrc="cursor ~/.bashrc"
+alias dotfiles="cursor ~/dotfiles"
 
 alias untar='tar -zxvf '
 alias gti='git'
@@ -69,3 +69,5 @@ alias gch='git checkout'
 alias ssh-keygen='ssh-keygen -t ed25519'
 alias epy_rl='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOWA_DIR/src/protobuf/src/python:$QOOWA_DIR/src/rl_training/python/:$QOOWA_DIR/src/rl_training/farm_binding/python/" && export LIBTORCH_USE_PYTORCH=1'
 alias epy_gym='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOWA_DIR/src/protobuf/src/python:$QOOWA_DIR/src/gym_warehouse/python/:$QOOWA_DIR/src/gym_warehouse/farm_binding/python"'
+
+alias cursor='/opt/Cursor/cursor.appimage'

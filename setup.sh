@@ -1,8 +1,3 @@
-# Bashrc
-ln -snf "$(pwd)/bashrc++" ~/.bashrc++
-
-echo "Setting up Bashrc";
-
 echo "source ~/dotfiles/bash_functions" >> ~/.bashrc;
 echo "source ~/dotfiles/bash_aliases" >> ~/.bashrc;
 
@@ -10,7 +5,7 @@ echo "source ~/dotfiles/bash_aliases" >> ~/.bashrc;
 ln -snf "$(pwd)/config.fish" ~/.config/fish/
 
 # Tmux
-sudo apt-get install tmux
+# sudo apt-get install tmux
 
 # Tumux Configuration
 ln -snf "$(pwd)/tmux.conf" ~/.tmux.conf
