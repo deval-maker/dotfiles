@@ -1,6 +1,6 @@
 eval /home/deval/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 source ~/dotfiles/bash_aliases
-conda activate rl_train
+conda activate qoowa
 
 # function generateqr
 #     echo "$argv" | curl -F-=\<- qrenco.de

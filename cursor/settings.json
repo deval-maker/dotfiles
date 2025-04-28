@@ -1,0 +1,100 @@
+{
+    "window.commandCenter": 1,
+    "files.autoSave": "afterDelay",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.autofetch": true,
+    "terminal.integrated.inheritEnv": false,
+    "gitlens.home.preview.enabled": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": false,
+        "tags": true,
+        "worktrees": false,
+        "contributors": true,
+        "repositories": false,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "git.confirmSync": false,
+    "git.replaceTagsWhenPull": true,
+    "editor.lineNumbers": "relative",
+    "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["leader", "g"],
+            "commands": ["workbench.scm.focus"]
+        },
+        {
+            "before": ["leader", "e"],
+            "commands": ["workbench.files.action.focusFilesExplorer"]
+        },
+        {
+            "before": ["leader", "q"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["leader", "p"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["leader", "s"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["leader", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["leader", "m"],
+            "commands": ["workbench.action.pinEditor"],
+            "when": "!activeEditorIsPinned"
+        },
+        {
+            "before": ["leader", "leader", "m"],
+            "commands": ["workbench.action.unpinEditor"],
+            "when": "activeEditorIsPinned"
+        },
+        {
+            "before": ["leader", "1"],
+            "commands": ["workbench.action.openEditorAtIndex1"]
+        },
+        {
+            "before": ["leader", "2"],
+            "commands": ["workbench.action.openEditorAtIndex2"]
+        },
+        {
+            "before": ["leader", "3"],
+            "commands": ["workbench.action.openEditorAtIndex3"]
+        },
+        {
+            "before": ["leader", "4"],
+            "commands": ["workbench.action.openEditorAtIndex4"]
+        },
+        {
+            "before": ["leader", "5"],
+            "commands": ["workbench.action.openEditorAtIndex5"]
+        },
+        {
+            "before": ["leader", "6"],
+            "commands": ["workbench.action.openEditorAtIndex6"]
+        },
+        {
+            "before": ["leader", "7"],
+            "commands": ["workbench.action.openEditorAtIndex7"]
+        },
+        {
+            "before": ["leader", "8"],
+            "commands": ["workbench.action.openEditorAtIndex8"]
+        },
+        {
+            "before": ["leader", "9"],
+            "commands": ["workbench.action.openEditorAtIndex9"]
+        }
+    ],
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    }
+}
+

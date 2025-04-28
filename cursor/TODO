@@ -1,0 +1,6 @@
+[ ] function navigation
+o make the most of these commands, I recommend:
+Installing ctags for better code navigation
+Using a plugin like coc.nvim or YouCompleteMe for enhanced code navigation
+Learning about marks (e.g., ma to set mark 'a', 'a to jump to mark 'a')
+These commands should help you navigate through code more efficiently in Vim!
