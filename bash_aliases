@@ -2,14 +2,10 @@ alias sshconfig="cursor ~/.ssh/config"
 alias bashrc="cursor ~/.bashrc"
 alias dotfiles="cursor ~/dotfiles"
 
-alias untar='tar -zxvf '
 alias gti='git'
 
 alias df='df -h'
-## get rid of command not found ##
-alias cd..='cd ..'
- 
-## a quick way to get out of current directory ##
+alias cd..='cd ..' 
 alias ..='cd ..'
 alias .2='cd ../../'
 alias .3='cd ../../../'
@@ -20,7 +16,7 @@ alias l='lsd -h'
 alias sl='lsd -h'
 alias grep='grep --color=auto'
 alias ll='lsd -lah'
- 
+
 # Make some of the file manipulation programs verbose
 alias mv="mv -v"
 # alias rm="rm -vi"
@@ -51,12 +47,9 @@ alias ddu='du -sh * | sort -hr | head -20'
 
 alias r='reset'
 
-# Git 
 alias gs='git status'
-alias ga='git add'
-alias gb='git branch'
 alias gcm='git commit -m'
-alias gch='git checkout'
+alias gl='git log --oneline --graph --decorate'
 
 alias reload="source ~/.bashrc"
 alias please='sudo $(fc -ln -1)'

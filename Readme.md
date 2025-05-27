@@ -28,3 +28,6 @@ Design points:
 https://earthly.dev/blog/command-line-tools/
 https://switowski.com/blog/favorite-cli-tools#z
 
+https://github.com/akinomyoga/ble.sh
+https://www.linuxbash.sh/post/fasd-quick-file-navigation-with-frequency-and-recency
+https://github.com/dvorka/hstr

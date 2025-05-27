@@ -32,4 +32,6 @@ sudo apt install fasd
 sudo apt install bat
 sudo apt install fd-find
 sudo apt install lsd
-
+sudo apt-get install gawk
+sudo apt-get install ripgrep
+sudo apt-get install ncdu
