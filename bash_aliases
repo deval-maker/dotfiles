@@ -15,18 +15,12 @@ alias .2='cd ../../'
 alias .3='cd ../../../'
 alias .4='cd ../../../../'
 
-## Colorize the ls output ##
-alias ls='ls --color=auto'
-alias l='ls --color=auto'
-alias sl='ls --color=auto'
+alias ls='lsd -h'
+alias l='lsd -h'
+alias sl='lsd -h'
+alias grep='grep --color=auto'
+alias ll='lsd -lah'
  
-## Use a long listing format ##
-alias ll='ls -la'
- 
-## Show hidden files ##
-alias l.='ls -d .* --color=auto'
-
-
 # Make some of the file manipulation programs verbose
 alias mv="mv -v"
 # alias rm="rm -vi"
@@ -52,8 +46,6 @@ alias wget='wget -c '
 
 alias myip="curl http://ipecho.net/plain; echo"
 
-alias b="batcat"
-
 alias chx='chmod +x'
 alias ddu='du -sh * | sort -hr | head -20'
 
@@ -66,13 +58,21 @@ alias gb='git branch'
 alias gcm='git commit -m'
 alias gch='git checkout'
 
+alias reload="source ~/.bashrc"
+alias please='sudo $(fc -ln -1)'
+alias cat='batcat --paging=never --theme="Solarized (dark)"'
+alias fd='fdfind'
+alias ports='lsof -i -P -n | grep LISTEN'
+alias ipinfo='curl ipinfo.io'
+
+
 alias ssh-keygen='ssh-keygen -t ed25519'
 alias epy_rl='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOWA_DIR/src/protobuf/src/python:$QOOWA_DIR/src/rl_training/python/:$QOOWA_DIR/src/rl_training/farm_binding/python/"'
 alias epy_gym='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOWA_DIR/src/protobuf/src/python:$QOOWA_DIR/src/gym_warehouse/python/:$QOOWA_DIR/src/gym_warehouse/farm_binding/python"'
 
 alias other_exports='export LIBTORCH_USE_PYTORCH=1 && export LIBTORCH_BYPASS_VERSION_CHECK=1 && export AWS_DEFAULT_REGION=us-east-2 && export LD_LIBRARY_PATH=/home/deval/anaconda3/envs/qoowa/lib/python3.10/site-packages/torch/lib'
 
-alias cursor='/opt/cursor.appimage'
+alias cursor='/opt/Cursor/Cursor-0.49.6-x86_64.AppImage --no-sandbox'
 alias ws_0='cursor ~/code/qoowa/farm.code-workspace'
 alias ws_1='cursor ~/code/qoowa.worktrees/worktree_1/farm.code-workspace'
 alias ws_2='cursor ~/code/qoowa.worktrees/worktree_2/farm.code-workspace'

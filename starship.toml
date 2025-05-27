@@ -1,0 +1,76 @@
+# Zen-style Starship prompt with smart context awareness
+
+format = """
+$directory$git_branch$git_status$python$nodejs$cmd_duration
+$character
+"""
+
+add_newline = true
+
+# Prompt symbol
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Directory path
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncate_to_repo = true
+read_only = " "
+read_only_style = "red"
+
+# Git branch and status
+[git_branch]
+format = " [$branch]($style)"
+style = "bold purple"
+truncation_length = 25
+truncation_symbol = "…"
+
+[git_status]
+style = "red"
+format = ' [\[$all_status$ahead_behind\]]($style)'
+
+# Show duration if command > 2 seconds
+[cmd_duration]
+min_time = 2000
+format = " [$duration](yellow)"
+
+# Python: show only in virtualenv or project
+[python]
+format = ' [${symbol}${pyenv_prefix}(${version})]($style)'
+style = "bold green"
+symbol = "🐍 "
+pyenv_version_name = true
+detect_extensions = ["py"]
+detect_files = ["requirements.txt", "pyproject.toml", "setup.py", ".python-version"]
+detect_folders = ["venv", ".venv"]
+disabled = false
+
+# Optional disabled modules
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[package]
+disabled = true
+
+[rust]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[terraform]
+disabled = true
