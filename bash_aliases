@@ -50,6 +50,8 @@ alias r='reset'
 alias gs='git status'
 alias gcm='git commit -m'
 alias gl='git log --oneline --graph --decorate'
+alias push='git push --set-upstream'
+alias pull='git pull --rebase --autostash --tags'
 
 alias reload="source ~/.bashrc"
 alias please='sudo $(fc -ln -1)'
