@@ -1,19 +1,3 @@
-# function cl() {
-#     DIR="$*";
-#         # if no DIR given, go home
-#         if [ $# -lt 1 ]; then
-#                 DIR=$HOME;
-#     fi;
-#     builtin cd "${DIR}" && \
-#     # use your preferred ls command
-#         ls -F --color=auto
-# }
-
-# function generateqr ()
-# {
-#     echo "$@" | curl -F-=\<- qrenco.de
-# }
-
 extract () {
   if [ -f "$1" ]; then
     case "$1" in
@@ -63,7 +47,11 @@ if command -v zoxide &> /dev/null; then
   eval "$(zoxide init bash)"
 fi
 
-eval "$(fasd --init auto)"
+if command -v fasd &> /dev/null; then
+  eval "$(fasd --init auto)"
+fi
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+xhost +local:docker > /dev/null 2>&1

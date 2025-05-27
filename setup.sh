@@ -1,5 +1,6 @@
-echo "source ~/dotfiles/bash_functions" >> ~/.bashrc;
+
 echo "source ~/dotfiles/bash_aliases" >> ~/.bashrc;
+echo "source ~/dotfiles/bash_functions" >> ~/.bashrc;
 
 # Tmux
 sudo apt-get install tmux
