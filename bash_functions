@@ -55,3 +55,14 @@ bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
 xhost +local:docker > /dev/null 2>&1
+
+export LIBTORCH_USE_PYTORCH=1
+export LIBTORCH_BYPASS_VERSION_CHECK=1
+export AWS_DEFAULT_REGION=us-east-2
+alias exp_rl='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOWA_DIR/src/protobuf/src/python:$QOOWA_DIR/src/rl_training/python/:$QOOWA_DIR/src/rl_training/farm_binding/python/"'
+alias exp_rust='export LD_LIBRARY_PATH="$QOOWA_DIR/src/rl_training/venvs/rl-training-export/lib/python3.12/site-packages/torch/lib:$LD_LIBRARY_PATH" && export LIBTORCH="$QOOWA_DIR/src/rl_training/venvs/rl-training-export/lib/python3.12/site-packages/torch:$LIBTORCH"'
+alias source_rust='source $QOOWA_DIR/src/rl_training/venvs/rl-training-export/bin/activate'
+
+alias setup_wt0='export QOOWA_DIR=~/code/qoowa/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'
+alias setup_wt1='export QOOWA_DIR=~/code/qoowa.worktrees/worktree_1/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'
+alias setup_wt2='export QOOWA_DIR=~/code/qoowa.worktrees/worktree_2/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'

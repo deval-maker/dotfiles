@@ -53,6 +53,8 @@ alias gcm='git commit -m'
 alias gl='git log --oneline --graph --decorate'
 alias push='git push --set-upstream'
 alias pull='git pull --rebase --autostash --tags'
+alias soft-reset='git reset --soft HEAD~1'
+alias hard-reset='git reset --hard HEAD~1'
 
 alias reload="source ~/.bashrc"
 alias please='sudo $(fc -ln -1)'
