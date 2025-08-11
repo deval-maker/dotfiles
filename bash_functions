@@ -63,6 +63,4 @@ alias exp_rl='export PYTHONPATH="$PYTHONPATH:$QOOWA_DIR/src/python_modules:$QOOW
 alias exp_rust='export LD_LIBRARY_PATH="$QOOWA_DIR/src/rl_training/venvs/rl-training-export/lib/python3.12/site-packages/torch/lib:$LD_LIBRARY_PATH" && export LIBTORCH="$QOOWA_DIR/src/rl_training/venvs/rl-training-export/lib/python3.12/site-packages/torch:$LIBTORCH"'
 alias source_rust='source $QOOWA_DIR/src/rl_training/venvs/rl-training-export/bin/activate'
 
-alias setup_wt0='export QOOWA_DIR=~/code/qoowa/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'
-alias setup_wt1='export QOOWA_DIR=~/code/qoowa.worktrees/worktree_1/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'
-alias setup_wt2='export QOOWA_DIR=~/code/qoowa.worktrees/worktree_2/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'
+alias setup_qoowa='export QOOWA_DIR=~/code/qoowa/ && exp_rust && exp_rl && cd $QOOWA_DIR && source_rust'

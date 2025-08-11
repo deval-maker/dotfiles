@@ -55,6 +55,8 @@ alias push='git push --set-upstream'
 alias pull='git pull --rebase --autostash --tags'
 alias soft-reset='git reset --soft HEAD~1'
 alias hard-reset='git reset --hard HEAD~1'
+alias fetch='git fetch --all --tags'
+
 
 alias reload="source ~/.bashrc"
 alias please='sudo $(fc -ln -1)'
@@ -65,3 +67,6 @@ alias ipinfo='curl ipinfo.io'
 alias ssh-keygen='ssh-keygen -t ed25519'
 
 alias ddu='du -sh * | sort -hr | head -20'
+
+alias tar='tar -I zstd -cf'
+alias untar='tar -I zstd -xf'

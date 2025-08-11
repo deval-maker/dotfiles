@@ -1,5 +1,8 @@
 ### Personal Dotfile and config manager.
 
+Clone
+`git clone https://github.com/deval-maker/dotfiles.git`
+
 Awsm Fish: https://github.com/jorgebucaran/awsm.fish
 Fisher: https://github.com/jorgebucaran/fisher
 GitNow, Z, Done
