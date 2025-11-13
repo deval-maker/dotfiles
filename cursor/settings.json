@@ -95,6 +95,15 @@
     ],
     "[markdown]": {
         "diffEditor.ignoreTrimWhitespace": false
+    },
+    "extensions.ignoreRecommendations": true,
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown"
+    ],
+    "remote.SSH.remotePlatform": {
+        "192.168.8.181": "linux",
+        "192.168.8.195": "linux"
     }
 }
 

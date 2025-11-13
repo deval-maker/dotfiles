@@ -1,5 +1,3 @@
-alias cursor='/opt/cursor.appimage --no-sandbox'
-
 alias sshconfig="cursor ~/.ssh/config"
 alias bashrc="cursor ~/.bashrc"
 alias dotfiles="cursor ~/dotfiles"
@@ -70,3 +68,5 @@ alias ddu='du -sh * | sort -hr | head -20'
 
 alias tar='tar -I zstd -cf'
 alias untar='tar -I zstd -xf'
+
+alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
